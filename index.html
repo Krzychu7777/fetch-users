@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-album" style="display: none;">
+        <div class="album-bg"></div>
+        <div class="close-album">
+            <svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="48px" height="48px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/>
+            </svg>
+        </div>
+        <div class="album-header">
+            <h2>Tytuł Albumu:</h2>
+            <h3></h3>
+        </div>
+        <div class="images-container">
+        </div>
+        
+    </div>
+    <div class="popup-succes">
+        <img src="icons8-close-thin.svg" alt="" class="close-button">
+        <h2>Polecenie zostało wykonane</h2>
+    </div>
+    <div class="popup-error">
+        <img src="icons8-close-thin.svg" alt="" class="close-button">
+        <h2>Użytkownik nie posiada albumu</h2>
+    </div>
+    <table class="user-table">
+        <tr>
+            <th>Id</th>
+            <th>Mail</th>
+            <th>Nazwisko</th>
+            <th>Usuń</th>
+            <th>Edycja</th>
+            <th>Pokaż zdjęcia</th>
+        </tr>
+    </table>
+    <div class="edit-container" style="display: none;">
+        <h2>Edytuj użytkownika</h2>
+        <div class="edit-item">
+            <label for="mail">Podaj maila</label>
+            <input type="email" name="mail" id="mail" placeholder="jan.nowak@gmail.com">
+        </div>
+        <div class="edit-item">
+            <label for="last-name">Podaj nazwisk</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Nowak">
+        </div>
+        <button class="edit-user">Zaakceptuj</button>
+    </div>
+    <div class="add-container">
+        <h1>Dodaj użytkownika</h1>
+        <div class="add-item">
+            <label for="add-mail">Podaj maila</label>
+            <input type="email" name="add-mail" id="add-mail" placeholder="jan.nowak@gmail.com">
+        </div>
+        <div class="add-item">
+            <label for="add-last-name">Podaj nazwisko</label>
+            <input type="text" name="add-last-name" id="add-last-name" placeholder="Nowak">
+        </div>
+        <button class="add-user">Dodaj</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
